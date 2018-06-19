@@ -1,0 +1,5 @@
+npm install typescript -g > instala o typescript através do node js;
+tsc nome do arquivo >compila manualmente oarquivo ts para js;
+tsc -w > o compilador do typescript (ts) fica monitorando a pasta e compila ao salvar;
+
+node caminho do arquivo sem extensão > executa o script;
