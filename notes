@@ -1,5 +1,37 @@
 npm install typescript -g > instala o typescript através do node js;
 tsc nome do arquivo >compila manualmente oarquivo ts para js;
 tsc -w > o compilador do typescript (ts) fica monitorando a pasta e compila ao salvar;
-
 node caminho do arquivo sem extensão > executa o script;
+
+Exemplos Funções
+função sem retorno
+function minhaFuncao(param: string):void{
+  console.log(param);
+}
+
+funcao com retorno
+function minhaRetorno(param:number, param1:string):boolean{
+  return (true);
+}
+
+funcao atribuida a uma variavel
+let variavelA = function minhaFucao(param: number):void{
+  console.log(param);
+}
+
+Arrow function
+let ArrowFunc = (param1:number => console.log("Arrow:" + param1));
+ArrowFunc(1);
+
+Parametros opcionais em Funções
+function ParamOpcional(param1:string,param2?:number):void{
+  console.log( "Param1: "+ param1 );
+  console.log( "Param2: "+ param2 );
+}
+
+Parametros REST, neste exemplo permite que eu possa chamar a função passando numeros
+fora de um array que automaticamente a função transforma em array
+function ParamRest(...param:number[]):number{
+  return param.reduce((a,b,c)=> c,0);
+}
+console.log(ParamRest(1,2,3,4));
