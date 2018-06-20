@@ -7,7 +7,7 @@ console.log("Proximo Episodio: " + epsodio);
 var varFunc = function semRetorno(param0, param2, param3) {
     console.log("Parâmetro0 " + param0 + " Parâmetro2" + param2 + " Parâmetro3" + param3);
 };
-varFunc('Vanessa', 1, ["Vanessa", " Meu Cheiro"]);
+varFunc('Vanessa', 1, ["Teste 1", " Teste 2"]);
 var arrowFunc = (function (param1) { return console.log("Arrow:" + param1); });
 arrowFunc(1);
 function paramOpcional(param1, param2) {
@@ -23,6 +23,9 @@ function ParamRest() {
     return param.reduce(function (a, b, c) { return c; }, 0);
 }
 console.log(ParamRest(1, 2, 3, 4));
+var testaMenor12 = function (paramNumber) {
+    return paramNumber < 12;
+};
 var paramTst = 1;
 console.log("O parâmetro é:" + paramTst + " Na chamada da função era:" + testaMenor12(paramTst));
 var x9;
@@ -36,7 +39,4 @@ var addX9 = function () {
 };
 addX9('você', 'Naiara');
 console.log("Meus x9's eram " + x9[0] + ' e ' + x9[1]);
-var testaMenor12 = function (paramNumber) {
-    return paramNumber < 12;
-};
 console.log("Teste crase : " + testaMenor12(10));
