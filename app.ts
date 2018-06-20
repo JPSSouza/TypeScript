@@ -25,3 +25,18 @@ function ParamRest(...param:number[]):number{
   return param.reduce((a,b,c)=> c,0);
 }
 console.log(ParamRest(1,2,3,4));
+
+let paramTst:number = 1;
+console.log("O parâmetro é:" + paramTst + " Na chamada da função era:" + testaMenor12(paramTst));
+let x9: string[];
+let addX9 = function(...sNome:string[]):boolean{
+  x9 = sNome;
+  return true;
+};
+addX9('você','Naiara');
+console.log("Meus x9's eram " + x9[0] + ' e ' + x9[1]);
+
+let testaMenor12 = function (paramNumber: number):boolean{
+    return paramNumber < 12
+}
+console.log(`Teste crase : ${testaMenor12(10)}`);
