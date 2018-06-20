@@ -1,0 +1,23 @@
+o comando super é usado para se referir ao metodo da classe pai e caso de herança;
+Exemplo:
+//neste caso ao criar o constructor automaticamente o typescript cria a
+ propriedade publica que tambem poderia ser privada
+
+class MeuExemplo{
+  constructor(public propriedad:string){}
+  showPropertie(){
+    console.log(this.propriedad);
+  }
+}
+
+class MeuExemploFilha extends MeuExemplo{
+  constructor(){
+    super('Teste');
+  }
+  showPropertie2(){
+      super.showPropertie();
+  }
+}
+
+Palavra reservada extends serve para herança;
+Palavra reservada implemets serve para implementar interfaces;
