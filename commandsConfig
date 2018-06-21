@@ -1,0 +1,14 @@
+para instalar bibliotecas externas em javascript
+
+1-no cmd, pasta raiz digite:
+npm init
+responda as perguntas name e version ou rode o comando com -f para pegar o padrão;
+
+2-para instalar a biblioteca digite o comando:
+npm install --save nome da biblioteca
+o --save diz que a biblioteca deve ser instalada em desenvolvimento e runtime
+
+3-instale a definição de tipos
+npm install --save-dev nome da definicão de tipos ex:@types/lodash@4.14
+parametro -dev significa que a definição de tipos vai ser usada apenas em dev
+nao em runtime
